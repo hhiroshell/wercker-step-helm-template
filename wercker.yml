@@ -3,6 +3,10 @@ box: ubuntu:18.04
 build:
   steps:
   - shellcheck
+  - script: 
+      name: install envsubst
+      code: |
+        apt-get update && apt-get install -y curl
   - script:
       name: helm install
       code: |
