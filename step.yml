@@ -1,0 +1,17 @@
+name: helm-template
+version: 0.0.1
+summary: helm-template
+# tags:
+#   - template
+#   - steps
+#   - template
+properties:
+- name: flags
+  type: string
+  required: false
+- name: chart
+  type: string
+  required: true
+- name: output-file
+  type: string
+  required: true

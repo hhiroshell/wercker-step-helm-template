@@ -1,0 +1,5 @@
+#!/bin/sh
+
+helm template $WERCKER_HELM_TEMPLATE_FLAGS \
+              $WERCKER_HELM_TEMPLATE_CHART \
+              > $WERCKER_HELM_TEMPLATE_OUTPUT_FILE
